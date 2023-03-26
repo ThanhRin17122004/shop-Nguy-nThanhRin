@@ -1,0 +1,66 @@
+.content{
+    text-align: center;
+}
+.big-ruou{
+    display: flex;
+    justify-content: center;
+}
+.small-rượu{
+    border: 1px solid brown;
+    margin: 10px;
+    width: 22%;
+    box-shadow: 5px 5px brown;
+}
+.small-ruou p{
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 350px;
+    height: auto;
+    font-size: 17px;
+}
+.small-ruou p:hover{
+    color: brown;
+    font-weight: bold;
+}
+h2{
+    color: brown;
+}
+.tien{
+    color: brown;
+    font-weight: bold;
+}
+
+.back-end{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+.back-end .end{
+    width: 30%;
+}
+.gif img{
+    width: 100%;
+    height: 100%;
+}
+.gif{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    padding: 20px 40px;
+}
+.layout-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    padding: 0px 40px;
+
+}
+.layout-2 img{
+    height: 251.5px;
+}
+u{
+    color: brown;
+}
+.winemart{
+    text-align: center;
+}

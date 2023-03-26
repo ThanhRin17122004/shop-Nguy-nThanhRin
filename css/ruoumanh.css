@@ -1,0 +1,42 @@
+.SP-ruoumanh{
+    text-align: center;
+}
+.big-ruoumanh{
+    display: flex;
+    justify-content: center;
+}
+.small-ruoumanh{
+    border: 1px solid brown;
+    margin: 10px;
+    box-shadow: 7px 7px brown;
+}
+.small-ruoumanh p{
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 350px;
+    height: auto;
+    font-size: 20px;
+}
+.small-ruoumanh p:hover{
+    color: brown;
+    font-weight: bold;
+}
+.small-ruoumanh p:hover{
+    color: brown;
+    font-weight: bold;
+}
+h2{
+    color: brown;
+}
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 20px 50px;
+}
+u{
+    color: brown;
+}
+.winemart{
+    text-align: center;
+}

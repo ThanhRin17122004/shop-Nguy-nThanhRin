@@ -1,0 +1,39 @@
+.winemart{
+    font-size: 20px;
+}
+.lienhe h2{
+    color: whitesmoke;
+}
+.big-lienhe{
+    display: flex;
+    padding: 50px;
+}
+.lienhe{
+    padding-right: 50px;
+}
+.date{
+    text-align: center;
+}
+.date-1{
+    display: flex;
+    margin: 20px;
+}
+.date-2{
+    margin: 10px;
+    border: 1px solid brown;
+    box-shadow: 5px 5px brown;
+}
+.date h2{
+    color: brown;
+}
+.lienhe{
+    border: 1px solid brown;
+    height: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: brown;
+    color: white;
+}
+.lienhe-1{
+    padding-top: 80px;
+}

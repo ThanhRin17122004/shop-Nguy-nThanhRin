@@ -1,0 +1,19 @@
+.name{
+    text-align: center;
+}
+.name p{
+    font-size: 20px;
+}
+.name h2{
+    color: brown;
+}
+.sumenh{
+    padding-top: 30px;
+    text-align: center;
+}
+.sumenh p{
+    font-size: 20px;
+}
+.sumenh h2{
+    color: brown;
+}

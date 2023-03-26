@@ -1,0 +1,33 @@
+.SP-phukien{
+    text-align: center;
+}
+.big-phukien{
+    display: flex;
+    justify-content: center;
+}
+.small-phukien{
+    border: 1px solid brown;
+    margin: 10px;
+    box-shadow: 5px 5px brown;
+}
+.small-phukien .p{
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 350px;
+    height: auto;
+    font-size: 20px;
+}
+.small-phukien .p:hover{
+    color: brown;
+    font-weight: bold;
+}
+h2{
+    color: brown;
+}
+.small-phukien p{
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 350px;
+    height: auto;
+    font-size: 20px;
+}

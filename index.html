@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nguyễn Thanh Rin</title>
+        <link rel="stylesheet" href="./css/index.css" />
+    </head>
+    <body>
+        <script>
+            function resizeIframe(height) {
+                var iframe = document.querySelector(".main-iframe");
+                iframe.style = `height: ${height}px`;
+            }
+        </script>
+        <div class="light">
+            <div class="logo">
+               <a href="./index.html"><img src="./img/logo.webp"alt=""width="100px"height="100px"/></a>
+            </div>
+            <div class="form-group">
+                <p class="sign-in btn-sign-in" onclick="modalSignIn()">
+                    Đăng Nhập
+                </p>
+                <p class="sign-up btn-sign-up">Đăng Ký</p>
+            </div>
+        </div>
+        <nav class="table">
+            <ul>
+                <li>
+                    <a href="./gioithieu.html" target="page" onclick="resizeIframe('1050')">GIỚI THIỆU</a>
+                </li>
+                <li>
+                    <a href="./ruouvang.html" target="page" onclick="resizeIframe('1500')">RƯỢU VANG</a>
+                    <!-- <ul>
+                        <li><a href="">Rượu Vang Đỏ</a></li>
+                        <li><a href="">Rượu Vang Trắng</a></li>
+                    </ul> -->
+                </li>
+                <li>
+                    <a href="./ruoumanh.html" target="page" onclick="resizeIframe('1450')">RƯỢU MẠNH</a>
+                    <!-- <ul>
+                        <li><a href="">Rượu Gim</a></li>
+                        <li><a href="">Rượu Rum</a></li>
+                    </ul> -->
+                </li>
+                <li>
+                    <a href="./biavacider.html" target="page" onclick="resizeIframe('1450')">BIA VÀ CIDER</a>
+                    <!-- <ul>
+                        <li><a href="">Các Loại Cider</a></li>
+                        <li><a href="">Bia Nhập Khẩu</a></li>
+                        <li><a href="">Bia Khác</a></li>
+                    </ul> -->
+                </li>
+
+                <li>
+                    <a href="./phukien.html" target="page" onclick="resizeIframe('900')">PHỤ KIỆN RƯỢU</a>
+                    <!-- <ul>
+                        <li><a href="">Ly Uống Rượu</a></li>
+                        <li><a href="">Đồ khui Bia</a></li>
+                    </ul> -->
+                </li>
+                <li>
+                    <a href="./lienhe.html" target="page" onclick="resizeIframe('1400')">LIÊN HỆ</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="slider">
+            <i class="fa fa-angle-left slider-prev" style="display: flex"></i>
+            <ul class="slider-dots">
+                <li class="slider-dot-item active" data-index="0"></li>
+                <li class="slider-dot-item" data-index="1"></li>
+                <li class="slider-dot-item" data-index="2"></li>
+                <li class="slider-dot-item" data-index="3"></li>
+                <li class="slider-dot-item" data-index="4"></li>
+            </ul>
+            <div class="slider-wrapper">
+                <div class="slider-main">
+                    <div class="slider-item">
+                        <img src="./img/slider1.jpg" alt="" class="image" />
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/slider2.jpg" alt="" class="image" />
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/slider33.jpg" alt="" class="image" />
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/slider44.jpg.crdownload" alt="" class="image" />
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/slider55.jpg" alt="" class="image" />
+                    </div>
+                </div>
+            </div>
+            <i class="fa fa-angle-right slider-next" style="display: flex"></i>
+            <script src="./js/slider.js"></script>
+        </div>
+        <div class="thay-doi">
+            <article>
+                <iframe
+                    src="./trangchu.html"
+                    frameborder="0"
+                    class="main-iframe"
+                    name="page"
+                ></iframe>
+            </article>
+        </div>
+        <footer class="footer">
+            <div class="one">
+                <div class="one-big">
+                    <h2>Hệ Thống Winemart</h2>
+                    <p>- 601 Trần Hưng Đạo, Q1, TP. HCM</p>
+                    <p>- 140 Nguyễn Văn Trỗi, P8,Q.Phú Nhuận, TP. HCM</p>
+                    <p>- Hotline 24/7: 1900.636.035</p>
+                </div>
+                <div class="one-big">
+                    <h2>Giới thiệu</h2>
+                    <p>Về chung tôi</p>
+                    <p>Tuyển dụng</p>
+                    <p>Bài viết-blog</p>
+                    <p>Giống nho rượu vang</p>
+                    <p>Thương hiệu rượu nổi bậc</p>
+                </div>
+                <div class="one-big">
+                    <h2>Chính sách</h2>
+                    <p>Chính sách bảo mật</p>
+                    <p>Hướng dẫn mua hàng - Thanh toán</p>
+                    <p>Chính sách đổi trả</p>
+                    <p>Chính sách giao hàng</p>
+                    <p>Câu hỏi thường gặp</p>
+                </div>
+            </div>
+            <hr />
+            <div class="one-nho">
+                <h4>UỐNG RƯỢU CÓ TRÁCH NHIỆM</h4>
+                <p>
+                    Các sản phẩm rượu không dành cho người dưới 18 tuổi và phụ
+                    nữ đang mang thai.
+                </p>
+                <p>©Copyright WineMart 2022</p>
+                <p>Thiết Kế Bởi: <a href="https://www.facebook.com/profile.php?id=100022743444240">Nguyễn Thanh Rin</a></p>
+            </div>
+        </footer>
+        <div class="modal-sign-in">
+            <form class="container">
+                <input type="text" placeholder="Điện thoại/Email:" required />
+                <input type="password" placeholder="Mât khẩu:" required />
+                <button type="submit">ĐĂNG NHẬP</button>
+            </form>
+        </div>
+        <div class="modal-sign-up">
+            <form class="container">
+                <input type="text" placeholder="Họ và tên:" required />
+                <input type="password" placeholder="Email:" required />
+                <input type="text" placeholder="Điện thoại:" />
+                <input type="password" name="" id="" placeholder="Mật khẩu:" />
+                <input
+                    type="password"
+                    name=""
+                    id=""
+                    placeholder="Nhập lại mật khẩu:"
+                />
+                <button type="submit">ĐĂNG NHẬP</button>
+            </form>
+        </div>
+        <script>
+            const btnSignIn = document.querySelector(".btn-sign-in");
+            const btnSignUp = document.querySelector(".btn-sign-up");
+            const modalSignIn = document.querySelector(".modal-sign-in");
+            const modalSignUp = document.querySelector(".modal-sign-up");
+            const body = document.body;
+            btnSignIn.onclick = function () {
+                modalSignIn.classList.add("active");
+            };
+            body.onclick = function (e) {
+                if (e.target.matches(".modal-sign-in")) {
+                    modalSignIn.classList.remove("active");
+                } else if (e.target.matches(".modal-sign-up")) {
+                    modalSignUp.classList.remove("active");
+                }
+            };
+            btnSignUp.addEventListener("click", function () {
+                modalSignUp.classList.add("active");
+            });
+        </script>
+    </body>
+</html>
