@@ -10,24 +10,31 @@
     margin: 10px;
     box-shadow: 5px 5px brown;
 }
-.small-phukien .p{
+.small-phukien p{
     margin-bottom: 10px;
     font-size: 15px;
-    width: 350px;
+    width: 300px;
     height: auto;
-    font-size: 20px;
+    font-size: 17px;
 }
-.small-phukien .p:hover{
+.small-phukien a{
+    text-decoration: none;
+    color: black;
+}
+/* .small-phukien img:hover{
+    transform: translate(5px,10px);
+} */
+.small-phukien p:hover{
     color: brown;
     font-weight: bold;
 }
 h2{
     color: brown;
 }
-.small-phukien p{
-    margin-bottom: 10px;
-    font-size: 15px;
-    width: 350px;
-    height: auto;
-    font-size: 20px;
+.tien{
+    color: brown;
+    font-weight: bold;
+}
+.p {
+    font-weight: bold;
 }

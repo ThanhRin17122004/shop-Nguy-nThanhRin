@@ -6,8 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Chủ</title>
     <link rel="stylesheet" href="./css/trangchu.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="shortcut icon" href="./img/logo.webp" type="image/x-icon" />
 </head>
 <body>
+    <!-- <div class="big">
+        <div class="form-group">
+            <p class="sign-in btn-sign-in" onclick="modalSignIn()">
+                Đăng Nhập
+            </p>
+        </div>
+            <div class="form-group">
+                <p class="sign-up btn-sign-up">Đăng Ký</p>
+        </div>
+    </div> -->
+    <!-- <div class="modal-sign-in">
+        <form class="container">
+            <input type="text" placeholder="Điện thoại/Email:" required />
+            <input type="password" placeholder="Mât khẩu:" required />
+            <button type="submit">ĐĂNG NHẬP</button>
+        </form>
+    </div>
+    <div class="modal-sign-up">
+        <form class="container">
+            <input type="text" placeholder="Họ và tên:" required />
+            <input type="password" placeholder="Email:" required />
+            <input type="text" placeholder="Điện thoại:" />
+            <input type="password" name="" id="" placeholder="Mật khẩu:" />
+            <input
+                type="password"
+                name=""
+                id=""
+                placeholder="Nhập lại mật khẩu:"
+            />
+            <button type="submit">ĐĂNG NHẬP</button>
+        </form>
+    </div> -->
+    <!-- <script>
+        const btnSignIn = document.querySelector(".btn-sign-in");
+        const btnSignUp = document.querySelector(".btn-sign-up");
+        const modalSignIn = document.querySelector(".modal-sign-in");
+        const modalSignUp = document.querySelector(".modal-sign-up");
+        const body = document.body;
+        btnSignIn.onclick = function () {
+            modalSignIn.classList.add("active");
+        };
+        body.onclick = function (e) {
+            if (e.target.matches(".modal-sign-in")) {
+                modalSignIn.classList.remove("active");
+            } else if (e.target.matches(".modal-sign-up")) {
+                modalSignUp.classList.remove("active");
+            }
+        };
+        btnSignUp.addEventListener("click", function () {
+            modalSignUp.classList.add("active");
+        });
+        window.addEventListener("message", function(e) {
+            if(e.data === "scroll-to-top") {
+                window.scrollTo(0,0)
+            }
+        })
+    </script> -->
+
+
+
+    <div class="big-slider">
+        <div class="small-slider1">
+            <img onmouseover="fover1()" onmouseout="fout1()" id="anh1" src="./img/small-slider1.jpg" alt="" width="250px" height="400px">
+            <script>
+                var out = new Image();
+                out.src = "img/small-slider1.jpg"
+                var over = new Image();
+                over.src = "img/small1.jpg"
+                function fover1(){
+                    var a= document.getElementById("anh1");
+                    anh1.src = over.src;
+                }
+                function fout1(){
+                    var anh1 = document.getElementById("anh1");
+                    anh1.src = out.src;
+                }
+            </script>
+        </div>    
+        <div class="slider">
+            <i class="fa fa-angle-left slider-prev" style="display: flex"></i>
+            <ul class="slider-dots">
+                <li class="slider-dot-item active" data-index="0"></li>
+                <li class="slider-dot-item" data-index="1"></li>
+                <li class="slider-dot-item" data-index="2"></li>
+                <li class="slider-dot-item" data-index="3"></li>
+                <li class="slider-dot-item" data-index="4"></li>
+            </ul>
+            <div class="slider-wrapper">
+                <div class="slider-main">
+                    <div class="slider-item">
+                        <img src="./img/slider33.jpg" alt="" class="image" />
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/slider2.jpg" alt="" class="image" />
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/slider11.jpg" alt="" class="image" />
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/slider44.jpg" alt="" class="image" />
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/slider55.jpg" alt="" class="image" />
+                    </div>
+                </div>
+            </div>
+        <i class="fa fa-angle-right slider-next" style="display: flex"></i>
+        <script src="./js/slider.js"></script>
+        </div>
+        <div class="small-slider2">
+            <img onmouseover="fover2()" onmouseout="fout2()" id="anh2"src="./img/small-slider2.jpg" alt="" width="250px" height="400px">
+            <script>
+                var out2 = new Image();
+                out2.src = "img/small-slider2.jpg"
+                var over2 = new Image();
+                over2.src = "img/small2.jpg"
+                function fover2(){
+                    var a= document.getElementById("anh2");
+                    anh2.src = over2.src;
+                }
+                function fout2(){
+                    var anh2 = document.getElementById("anh2");
+                    anh2.src = out2.src;
+                }
+            </script>
+        </div>
+    </div>
+<!-- ---------------------------------------------------------------------------------------- -->
     <div class="winemart"><h2><u>SẢN PHẨM CỦA WINEMART</u></h2></div>
     <div class="gif">
         <div class="layout-item">
@@ -37,73 +169,62 @@
             </div>
             <div class="big-ruou">
                 <div class="small-rượu"> 
-                    <img src="./img/a1.jpg" alt="" width="250px" height="250px">
-                    <p>VANG SEPTIMA OBRA RESERVA MALBEC</p>
-                    <p class="tien">880.000 đ</p>
+                    <a href="./sp1.html">
+                        <img src="./img/a1.jpg" alt="" width="250px" height="250px"onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                        <p>VANG SEPTIMA OBRA RESERVA MALBEC</p>
+                        <p class="tien">880.000 đ</p>
+                    </a>
                 </div>
                 <div class="small-rượu">
-                    <img src="./img/a2.jpg" alt="" width="250px" height="250px">
-                    <p>VANG VIVO CABERNET SAUVIGNON</p>
-                    <p class="tien">360.000 đ</p>
+                    <a href="/html/sp2.html">
+                        <img src="./img/a2.jpg" alt="" width="250px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                        <p>VANG VIVO CABERNET SAUVIGNON</p>
+                        <p class="tien">360.000 đ</p>
+                    </a>
                 </div>
                 <div class="small-rượu">
-                    <img src="./img/a3.webp" alt="" width="250px" height="250px">
-                    <p>VANG ROBERT MONDAVI PRIVATE SELECTION CABERNET SAUVIGNON</p>
-                    <p class="tien">700.000 đ</p>
+                    <a href="/html/sp3.html">
+                        <img src="./img/a3.webp" alt="" width="250px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                        <p>VANG ROBERT MONDAVI PRIVATE SELECTION CABERNET SAUVIGNON</p>
+                        <p class="tien">700.000 đ</p>
+                    </a>
                 </div>
                 <div class="small-rượu">
-                    <img src="./img/a4.webp" alt="" width="250px" height="250px">
-                    <p>VANG PAPALE LINEA ORO PRIMITIVO DI MANDURIA DOP</p>
-                    <p class="tien">1.290.000 đ</p>
-                </div>
-            </div>
-
-
-
-            <div class="big-ruou">
-                <div class="small-rượu">
-                    <img src="./img/a5.webp" alt="" width="250px" height="250px">
-                    <p>VANG HANDPICKED CABERNET MERLOT</p>
-                    <p class="tien">395.000 đ</p>
-                </div>
-                <div class="small-rượu">
-                    <img src="./img/a6.webp" alt="" width="250px" height="250px">
-                    <p>VANG LU'LI APPASSIMENTO ROSSO IGT PUGLIA</p>
-                    <p class="tien">990.000 đ</p>
-                </div>
-                <div class="small-rượu">
-                    <img src="./img/a7.webp" alt="" width="250px" height="250px">
-                    <p>VANG FEMAR ROMA ROSSO DOC</p>
-                    <p class="tien">750.000 đ</p>
-                </div>
-                <div class="small-rượu">
-                    <img src="./img/a8.webp" alt="" width="250px" height="250px">
-                    <p>VANG POGGIO LE VOLPI ROMA DOC EDIZIONE LIMITATA</p>
-                    <p class="tien">1.960.000 đ</p>
+                    <a href="/html/sp4.html">
+                        <img src="./img/a4.webp" alt="" width="250px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                        <p>VANG PAPALE LINEA ORO PRIMITIVO DI MANDURIA DOP</p>
+                        <p class="tien">1.290.000 đ</p>
+                    </a>
                 </div>
             </div>
-
-
             <div class="big-ruou">
                 <div class="small-rượu">
-                    <img src="./img/a9.webp" alt="" width="250px" height="250px">
-                    <p>VANG ROMA EPICURO DOC</p>
-                    <p class="tien">920.000 đ</p>
+                    <a href="/html/sp5.html">
+                        <img src="./img/a5.webp" alt="" width="250px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                        <p>VANG HANDPICKED CABERNET MERLOT</p>
+                        <p class="tien">395.000 đ</p>
+                    </a>
                 </div>
                 <div class="small-rượu">
-                    <img src="./img/a10.webp" alt="" width="250px" height="250px">
-                    <p>VANG BAGLIETTI MOSCATO NO.6</p>
-                    <p class="tien">720.000 đ</p>
+                    <a href="/html/sp6.html">
+                        <img src="./img/a6.webp" alt="" width="250px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                        <p>VANG LU'LI APPASSIMENTO ROSSO IGT PUGLIA</p>
+                        <p class="tien">990.000 đ</p>
+                    </a>
                 </div>
                 <div class="small-rượu">
-                    <img src="./img/a11.webp" alt="" width="250px" height="250px">
-                    <p>VANG VIVO CHARDONNAY PINOT NOIR</p>
-                    <p class="tien">360.000 đ</p>
+                    <a href="/html/sp7.html">
+                        <img src="./img/a7.webp" alt="" width="250px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                        <p>VANG FEMAR ROMA ROSSO DOC</p>
+                        <p class="tien">750.000 đ</p>
+                    </a>
                 </div>
                 <div class="small-rượu">
-                    <img src="./img/a12.webp" alt="" width="250px" height="250px">
-                    <p>VANG VIVO SHIRAZ</p>
-                    <p class="tien">360.000 đ</p>
+                    <a href="/html/sp8.html">
+                        <img src="./img/a8.webp" alt="" width="250px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                        <p>VANG POGGIO LE VOLPI ROMA DOC EDIZIONE LIMITATA</p>
+                        <p class="tien">1.960.000 đ</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -125,5 +246,20 @@
             </div>
         </div>
     </div>
+    <script>
+        function bigImg(x) {
+    // x.style.height = "300px";
+    // x.style.width = "300px";
+    x.style = `transform: scale(0.8)`
+  }
+  
+  function normalImg(x) {
+    // x.style.height = "280px";
+    // x.style.width = "280px";
+    x.style = `transform: scale(1)`
+  
+  }
+  window.parent.postMessage("scroll-to-top", "*");
+    </script>
 </body>
 </html>

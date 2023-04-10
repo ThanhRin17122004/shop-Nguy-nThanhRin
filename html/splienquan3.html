@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WineMart</title>
+    <link rel="stylesheet" href="/css/splienquan3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="shortcut icon" href="./img/logo.webp" type="image/x-icon" />
+</head>
+<body>
+    <div class="big-sanpham">
+        <div class="small-sampham-1">
+            <!-- <div id="main-image"> -->
+                <img src="/img/anhlienquan3.jpg" alt="" id="img-main">
+            <!-- </div> -->
+            <div class="main">
+                <div class="main-1"><img src="/img/anhlienquan3.jpg" alt="" onclick="image('one')" id="one"></div>
+                <div class="main-2"><img src="/img/anhlienquancon3.jpg" alt="" onclick="image('two')" id="two" ></div>
+            </div>
+        </div>
+        <div class="lightbox">
+            <div></div>
+            <img src="" href="">
+        </div>
+        <script>
+            // đổi ảnh
+            function image(id){
+                let imagePath =  document.getElementById(id).getAttribute('src');
+                document.getElementById('img-main').setAttribute('src',imagePath);
+            }
+            // zoom ảnh
+            var main = document.querySelectorAll(".main>img");
+
+            for (var i=0 ; i < main.length; i++){
+                main[i]. onmouseover = function(e){
+                    e.preventDefault();
+                    var mainimg = document.querySelectorAll(".small-sampham-1>img")[0];
+                    mainimg.src = this.src;
+                }
+            }
+
+            var mainimg = document.querySelectorAll(".small-sampham-1>img")[0];
+            mainimg. onclick = function(){
+                var lightbox = document.querySelectorAll(".lightbox")[0];
+                lightbox.style.display ="block";
+                lightbox.getElementsByTagName("img")[0].src = this.src;
+
+                lightbox.getElementsByTagName("div")[0].onclick = function(){
+                    lightbox.style.display="none";
+                }
+            }
+        </script>
+        <div class="small-sampham-2">
+            <h1>Vang Poggio Le Volpi Roma Rosso DOC</h1>
+            <p class="money">490.000 Đ</p>
+            <hr>
+            <h2>Mô tả:</h2>
+            <p class="mota">Vang Poggio Le Volpi Roma Rosso DOC</p>
+            <div class="style">
+                <div class="style-1"><h2>Style:</h2></div>
+                <div class="style-2"><p class="khonghop">Không hộp</p></div>
+            </div>
+            <div class="dungtich">
+                <div class="dungtich-1"><h2>Dung tích:</h2></div>
+                <div class="dungtich-2"><p class="dungtich-3">750ml</p></div>
+            </div>
+            <div class="soluong">
+                <div class="soluong-1"><h2>Số lượng:</h2></div>
+                <div class="soluong-2">
+                    <div class="soluong-3">
+                        <div id="buy-amount">
+                            <button class="minus-btn" onclick="handleMinus()"><i class="fa-solid fa-minus"></i></button>
+                                <input type="text" name="amount" id="amount" value="1">
+                            <button class="plus-btn" onclick="handlePlus()"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                let amountElement = document.getElementById('amount');
+                let amount = amountElement.value;
+                // console.log(amount)
+                let render = (amount)=>{
+                    amountElement.value = amount
+                }
+                let handlePlus = () =>{
+                    amount++
+                    render(amount);
+                }
+                // handleMinus
+                let handleMinus = () =>{
+                    if (amount>1)
+                    amount--
+                    render(amount);
+                }
+                amountElement.addEventListener('input',()=>{
+                    amount = amountElement.value;
+                    amount = parseInt(amount);
+                    amount = (isNaN (amount)|| amount==0)?1:amount;
+                    render(amount);
+                    console.log(amount);
+                });
+            </script>
+            <button class="button-1"><i class="fa-solid fa-cart-shopping"></i>
+                Thêm vào giỏ hàng</button>
+            <button class="button-2">Mua ngay</button>
+            <br>
+            <div class="button-3">
+                <!-- Trigger/Open The Modal -->
+            <button id="myBtn">Kiểm tra của hàng còn hàng</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>Vui lòng liên hệ</h1>
+                    <p class="p">hotline: <a href="tel://1900636035">1900636035</a></p>
+                    <p class="p">Zalo CSKH: <a href="tel://1900636035">1900636035</a></p>
+                    <p class="p">Facebook Winemart: <a href="https://www.facebook.com/profile.php?id=100022743444240">https://www.facebook.com/profile.php?id=100022743444240</a></p>
+                </div>
+
+            </div>
+
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks the button, open the modal  
+                btn.onclick = function() {
+                    modal.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.parent.postMessage("scroll-to-top", "*");
+    </script>
+    <div class="menu">
+        <h2>HƯỚNG DẪN MUA HÀNG</h2>
+        <p><i class="fa-solid fa-circle"></i>Bước 1: Bạn chọn loại rượu trên Danh mục hoặc Gõ tên loại rượu lên thanh Tìm kiếm</p>
+        <p><i class="fa-solid fa-circle"></i>Bước 2: Chọn Thêm vào giỏ hàng</p>
+        <p><i class="fa-solid fa-circle"></i>Bước 3: Xem giỏ hàng và chọn Thanh toán (COD hoặc chuyển khoản)</p>
+        <p><i class="fa-solid fa-circle"></i>Bước 4: Hoàn thành thanh toán và chờ xác nhận từ bộ phận CSKH của Winemart</p>
+        <p><i class="fa-solid fa-circle"></i>Bước 5: Theo dõi giao đơn hàng của bạn</p>
+    </div>
+    <div class="thongtinsanpham">
+        <h1><u>THÔNG TIN SẢN PHẨM</u></h1>
+        <div class="thongtin">
+            <div class="loairuou">
+                <img src="/img/loairuou.png" alt="" width="100px" height="100px">
+                <p>Loại rượu: Rượu vang đỏ</p>
+            </div>
+            <div class="dungtichruou">
+                <img src="/img/dungtich.png" alt="" width="100px" height="100px">
+                <p>Dung tích: 750ml</p>
+            </div>
+            <div class="nodocon">
+                <img src="/img/nongdocon.png" alt="" width="100px" height="100px">
+                <p>Nồng độ cồn: 14.5%</p>
+            </div>
+            <div class="kieuruou">
+                <img src="/img/kieuruou.png" alt="" width="100px" height="100px">
+                <p>Kiểu rượu: Primitivo (Zinfandel)</p>
+            </div>
+            <div class="vung">
+                <img src="/img/vung.png" alt="" width="100px" height="100px">
+                <p>Vùng: Puglia</p>
+            </div>
+            <div class="quocgia">
+                <img src="/img/quocgia.png" alt="" width="100px" height="100px">
+                <p>Quốc gia: Ý</p>
+            </div>
+        </div>
+    </div>
+    <h1 class="h1"><u>ĐÁNH GIÁ SẢN PHẨM</u></h1>
+    <div class="danhgiasanpham">
+        <div class="danhgia">
+            <div class="diemdanhgiatrungbinh">
+                <p class="strar-1">Điểm đánh giá trung bình</p>
+                <p class="star-2">0/5</p>
+                <p class="star-3">(chưa có lược đánh giá)</p>
+                <p class="star-4">Bạn cảm thấy sản phẩm này như thế nào</p>
+                <ul class="stars">
+                    <li class="star">&#10029;</li>
+                    <li class="star">&#10029;</li>
+                    <li class="star">&#10029;</li>
+                    <li class="star">&#10029;</li>
+                    <li class="star">&#10029;</li>
+                </ul>
+                <div class="output"></div>
+                <script>
+                    const starsUL = document.querySelector(".stars");
+                    const output = document.querySelector(".output");
+                    const stars = document.querySelectorAll(".star");
+                    stars.forEach((star, index) => {
+                        star.starValue = index + 1;
+                        star.addEventListener("click", starRate);
+                    });
+                    function starRate(e) {
+                        // output.innerHTML = `You Rated this ${e.target.starValue}`;
+                        stars.forEach((star, index) => {
+                            if (index < e.target.starValue) {
+                                star.classList.add("orange");
+                            } else {
+                                star.classList.remove("orange");
+                            }
+                        });
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="danhgia-1">
+            <div class="sao">
+                <p>5<i class="fa-solid fa-star"></i></p>
+                <div class="vachgiua"></div>
+                <p class="p1">0</p>
+            </div>
+            <div class="sao">
+                <p>4<i class="fa-solid fa-star"></i></p>
+                <div class="vachgiua"></div>
+                <p class="p1">0</p>
+            </div>
+            <div class="sao">
+                <p>3<i class="fa-solid fa-star"></i></p>
+                <div class="vachgiua"></div>
+                <p class="p1">0</p>
+            </div>
+            <div class="sao">
+                <p>2<i class="fa-solid fa-star"></i></p>
+                <div class="vachgiua"></div>
+                <p class="p1">0</p>
+            </div>
+            <div class="sao">
+                <p>1<i class="fa-solid fa-star"></i></p>
+                <div class="vachgiua"></div>
+                <p class="p1">0</p>
+            </div>
+        </div>
+        <div class="danhgia-2">
+            <p>Vui lòng chia sẽ nhận xét về sản phẩm của winemart</p>
+            <button>Viết đánh giá</button>
+        </div>
+    </div>
+    <h1 class="sp-cungdanhmuc"><u>SẢN PHẨM CÙNG DANH MỤC</u></h1>
+    <div class="big-ruoumanh">
+        <div class="small-ruoumanh">
+            <a href="/html/splienquan1.html">
+                <img src="/img/anhlienquan1.jpg" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                <p>Vang F Gold Limited Edition</p>
+                <p class="tien">1.680.000 Đ</p>
+            </a>
+        </div>
+        <div class="small-ruoumanh">
+            <a href="/html/splienquan2.html">
+                <img src="/img/anhlienquan2.jpg" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                <p>Rượu Vang Ý F Negroamaro Cantine San Marzano</p>
+                <p class="tien">1.050.000 Đ</p>
+            </a>
+        </div>
+        <div class="small-ruoumanh">
+            <a href="/html/splienquan3.html">
+                <img src="/img/anhlienquan3.jpg" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                <p>Vang Poggio Le Volpi Roma Rosso DOC</p>
+                <p class="tien">490.000 Đ</p>
+            </a>
+        </div>
+        <div class="small-ruoumanh">
+            <a href="/html/splienquan4.html">
+                <img src="/img/anhlienquan4.jpg" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                <p>Vang Roma Epicuro DOC</p>
+                <p class="tien">920.000 Đ</p>
+            </a>
+        </div>
+    </div>
+</div>
+<script>
+    function bigImg(x) {
+// x.style.height = "300px";
+// x.style.width = "300px";
+x.style = `transform: scale(0.9)`
+}
+
+function normalImg(x) {
+// x.style.height = "280px";
+// x.style.width = "280px";
+x.style = `transform: scale(1)`
+}
+const btn1 = document.querySelector(".button-1");
+   if(btn1) {
+    btn1.addEventListener("click", function(e) {
+            window.parent.postMessage("tang-sp", "*")
+    })
+   }
+</script>
+</body>
+</html>

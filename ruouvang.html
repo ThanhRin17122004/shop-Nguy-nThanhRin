@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rượu Vang</title>
     <link rel="stylesheet" href="./css/ruouvang.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="shortcut icon" href="./img/logo.webp" type="image/x-icon" />
 </head>
 <body>
     <div class="winemart"><h2><u>SẢN PHẨM CỦA WINEMART</u></h2></div>
@@ -22,54 +24,83 @@
     </div>
     <div class="SP-ruouvang">
         <hr>
-        <h2>TẤT CẢ SẢN PHẨM RƯỢU VANG</h2>
+        <h2><i class='fas fa-glass-cheers'></i>TẤT CẢ SẢN PHẨM RƯỢU VANG</h2>
         <hr>
         <div class="big-ruouvang">
             <div class="small-ruouvang">
-                <img src="./img/vang1.webp" alt="" width="172px" height="250px">
-                <p>Vang Papale Linea Oro Primitivo di Manduria DOP</p>
-                <p>1.290.000 Đ</p>
+                <a href="./sp1.html"><img src="./img/vang1.webp" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Vang Papale Linea Oro Primitivo di Manduria DOP</p>
+                    <p class="tien">1.290.000 Đ</p>
+                </a>
             </div>
             <div class="small-ruouvang">
-                <img src="./img/vang2.webp" alt="" width="172px" height="250px">
-                <p>Vang F Gold Limited Edition</p>
-                <p>1.680.000 Đ</p>
+                <a href="">
+                    <img src="./img/vang2.webp" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Vang F Gold Limited Edition</p>
+                    <p class="tien">1.680.000 Đ</p>
+                </a>
             </div>
             <div class="small-ruouvang">
-                <img src="./img/vang3.webp" alt="" width="172px" height="250px">
-                <p>Rượu Vang Ý F Negroamaro Cantine San   sMarzano</p>
-                <p>1.050.000 Đ</p>
+                <a href="">
+                    <img src="./img/vang3.webp" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Rượu Vang Ý F Negroamaro Cantine San   sMarzano</p>
+                    <p class="tien">1.050.000 Đ</p>
+                </a>
             </div>
             <div class="small-ruouvang">
-                <img src="./img/vang4.webp" alt="" width="173px" height="250px">
-                <p>Vang Poggio Le Volpi Roma Rosso DOC</p>
-                <p>1.290.000 Đ</p>
+                <a href="">
+                    <img src="./img/vang4.webp" alt="" width="173px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Vang Poggio Le Volpi Roma Rosso DOC</p>
+                    <p class="tien">1.290.000 Đ</p>
+                </a>
             </div>
 
 
         </div>
         <div class="big-ruouvang">
             <div class="small-ruouvang">
-                <img src="./img/vang5.webp" alt="" width="172px" height="250px">
-                <p>Vang Roma Epicuro DOC</p>
-                <p>920.000 Đ</p>
+                <a href="">
+                    <img src="./img/vang5.webp" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Vang Roma Epicuro DOC</p>
+                    <p class="tien">920.000 Đ</p>
+                </a>
             </div>
             <div class="small-ruouvang">
-                <img src="./img/vang6.webp" alt="" width="172px" height="250px">
-                <p>Vang Femar Roma rosso DOC</p>
-                <p>750.000 Đ</p>
+                <a href="">
+                    <img src="./img/vang6.webp" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Vang Femar Roma rosso DOC</p>
+                    <p class="tien">750.000 Đ</p>
+                </a>
             </div>
             <div class="small-ruouvang">
-                <img src="./img/vang7.webp" alt="" width="172px" height="250px">
-                <p>Vang Poggio Le Volpi Roma DOC Edizione Limitata</p>
-                <p>1.960.000 Đ</p>
+                <a href="">
+                    <img src="./img/vang7.webp" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Vang Poggio Le Volpi Roma DOC Edizione Limitata</p>
+                    <p class="tien">1.960.000 Đ</p>
+                </a>
             </div>
             <div class="small-ruouvang">
-                <img src="./img/vang8.webp" alt="" width="172px" height="250px">
-                <p>Vang Collefrisio In & Out</p>
-                <p>1.850.000 Đ</p>
+                <a href="">                
+                    <img src="./img/vang8.webp" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Vang Collefrisio In & Out</p>
+                    <p class="tien">1.850.000 Đ</p>
+                </a>
             </div>
         </div>
     </div>
+    <script>
+        function bigImg(x) {
+    // x.style.height = "300px";
+    // x.style.width = "300px";
+    x.style = `transform: scale(0.9)`
+  }
+  
+  function normalImg(x) {
+    // x.style.height = "280px";
+    // x.style.width = "280px";
+    x.style = `transform: scale(1)`
+  
+  }
+    </script>
 </body>
 </html>

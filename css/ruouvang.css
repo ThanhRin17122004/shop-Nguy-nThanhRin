@@ -10,16 +10,28 @@
     margin: 10px;
     box-shadow: 7px 7px brown;
 }
+.small-ruouvang a{
+    color: black;
+    text-decoration: none;
+}
 .small-ruouvang p{
     margin-bottom: 10px;
     font-size: 15px;
-    width: 350px;
+    width: 300px;
     height: auto;
     font-size: 20px;
+    font-weight: bold;
 }
+/* .small-ruouvang img:hover{
+    transform: translate(5px,10px);
+} */
 .small-ruouvang p:hover{
     color: brown;
     font-weight: bold;
+}
+.tien{
+    font-weight: bold;
+    color: brown;
 }
 h2{
     color: brown;

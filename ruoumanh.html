@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rượu Manh</title>
     <link rel="stylesheet" href="./css/ruoumanh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="shortcut icon" href="./img/logo.webp" type="image/x-icon" />
 </head>
 <body>
     <div class="winemart"><h2><u>SẢN PHẨM CỦA WINEMART</u></h2></div>
@@ -22,54 +24,82 @@
     </div>
     <div class="SP-ruoumanh">
         <hr>
-        <h2>TẤT CẢ SẢN PHẨM RƯỢU MẠNH</h2>
+        <h2><i class='fas fa-glass-cheers'></i>TẤT CẢ SẢN PHẨM RƯỢU MẠNH</h2>
         <hr>
         <div class="big-ruoumanh">
             <div class="small-ruoumanh">
-                <img src="./img/vang1.webp" alt="" width="172px" height="250px">
-                <p>Rượu Chivas Regal 18 Years Gold Signature</p>
-                <p>1.380.000 Đ</p>
+                <a href="">
+                    <img src="./img/vang1.webp" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Rượu Chivas Regal 18 Years Gold Signature</p>
+                    <p class="tien">1.380.000 Đ</p>
+                </a>
             </div>
             <div class="small-ruoumanh">
-                <img src="./img/vang2.webp" alt="" width="172px" height="250px">
-                <p>Rượu Chivas 12</p>
-                <p>620.000 Đ</p>
+                <a href="">
+                    <img src="./img/vang2.webp" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Rượu Chivas 12</p>
+                    <p class="tien">620.000 Đ</p>
+                </a>
             </div>
             <div class="small-ruoumanh">
-                <img src="./img/vang3.webp" alt="" width="172px" height="250px">
-                <p>Rượu Jagermeister Selected 56 Botanicals (Rượu thảo mộc đến từ Đức)</p>
-                <p>410.000 Đ</p>
+                <a href="">
+                    <img src="./img/vang3.webp" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Rượu Jagermeister Selected 56 Botanicals (Rượu thảo mộc đến từ Đức)</p>
+                    <p class="tien">410.000 Đ</p>
+                </a>
             </div>
             <div class="small-ruoumanh">
-                <img src="./img/vang4.webp" alt="" width="173px" height="250px">
-                <p>Rượu Bombay Sapphire Gin (1000ml)</p>
-                <p>540.000 Đ</p>
+                <a href="">
+                    <img src="./img/vang4.webp" alt="" width="173px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Rượu Bombay Sapphire Gin (1000ml)</p>
+                    <p class="tien">540.000 Đ</p>
+                </a>
             </div>
-
-
         </div>
         <div class="big-ruoumanh">
             <div class="small-ruoumanh">
-                <img src="./img/vang5.webp" alt="" width="172px" height="250px">
-                <p>Rượu Bulleit 95 Rye Whiskey</p>
-                <p>800.000 Đ</p>
+                <a href="">
+                    <img src="./img/vang5.webp" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Rượu Bulleit 95 Rye Whiskey</p>
+                    <p class="tien">800.000 Đ</p>
+                </a>
             </div>
             <div class="small-ruoumanh">
-                <img src="./img/vang6.webp" alt="" width="172px" height="250px">
-                <p>Rượu Absolut Apeach Vodka (1000ml)</p>
-                <p>490.000 Đ</p>
+                <a href="">
+                    <img src="./img/vang6.webp" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Rượu Absolut Apeach Vodka (1000ml)</p>
+                    <p class="tien">490.000 Đ</p>
+                </a>
             </div>
             <div class="small-ruoumanh">
-                <img src="./img/vang7.webp" alt="" width="172px" height="250px">
-                <p>Rượu Absolut Raspberry Vodka (1000ml)</p>
-                <p>490.000 Đ</p>
+                <a href="">
+                    <img src="./img/vang7.webp" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Rượu Absolut Raspberry Vodka (1000ml)</p>
+                    <p class="tien">490.000 Đ</p>
+                </a>
             </div>
             <div class="small-ruoumanh">
-                <img src="./img/vang8.webp" alt="" width="172px" height="250px">
-                <p>Rượu Absolut Apple Vodka (1000ml)</p>
-                <p>490.000 Đ</p>
+                <a href="">
+                    <img src="./img/vang8.webp" alt="" width="172px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Rượu Absolut Apple Vodka (1000ml)</p>
+                    <p class="tien">490.000 Đ</p>
+                </a>
             </div>
         </div>
     </div>
+    <script>
+        function bigImg(x) {
+    // x.style.height = "300px";
+    // x.style.width = "300px";
+    x.style = `transform: scale(0.9)`
+  }
+  
+  function normalImg(x) {
+    // x.style.height = "280px";
+    // x.style.width = "280px";
+    x.style = `transform: scale(1)`
+  
+  }
+    </script>
 </body>
 </html>

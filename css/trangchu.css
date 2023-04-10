@@ -9,16 +9,21 @@
     border: 1px solid brown;
     margin: 10px;
     width: 22%;
-    box-shadow: 5px 5px brown;
+    width: 300px;
+    height: 370px;
+    box-shadow: 5px 5px 3px 3px brown;
 }
-.small-ruou p{
-    margin-bottom: 10px;
-    font-size: 15px;
-    width: 350px;
-    height: auto;
+/* .small-rượu img:hover{
+    box-shadow: 5px 5px 3px 3px brown;
+    transform: translate(5px,10px);
+} */
+.small-rượu a{
     font-size: 17px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
-.small-ruou p:hover{
+.small-rượu p:hover{
     color: brown;
     font-weight: bold;
 }
@@ -63,4 +68,16 @@ u{
 }
 .winemart{
     text-align: center;
+}
+.big-slider{
+    display: flex;
+}
+.small-slider1{
+    padding-left: 60px;
+    padding-top: 10px;
+}
+.small-slider2{
+    padding-right: 60px;
+    padding-top: 10px;
+    border-radius: 100rem;
 }

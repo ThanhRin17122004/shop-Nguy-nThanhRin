@@ -30,10 +30,74 @@
     border: 1px solid brown;
     height: 250px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 50px;
     background-color: brown;
     color: white;
 }
 .lienhe-1{
     padding-top: 80px;
 }
+.gg-map{
+    margin-top:20px;
+}
+.form{
+    border: 1px solid gray;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+#contact-form{
+    border: 1px solid brown;
+    margin-top: 20px;
+    border-radius: 50px 50px 50px 50px ;
+    background-color: brown;
+}
+.form-group {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+label {
+    display: block;
+    /* margin-bottom: 5px; */
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+  }
+input[type="email"] {
+    width: 400px;
+}
+input[type="tel"] {
+    width: 400px;
+}
+input[type="text"] {
+    width: 400px;
+}
+textarea {
+    width: 400px;
+    height: 70px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #969696;
+  }
+  
+button[type="submit"] {
+    background-color: white;
+    color: brown;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+button[type="submit"]:hover {
+    background-color: white;
+  }

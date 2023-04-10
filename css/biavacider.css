@@ -10,22 +10,26 @@
     margin: 10px;
     box-shadow: 7px 7px brown;
 }
-.small-bia p{
+.small-bia  p{
     margin-bottom: 10px;
     font-size: 15px;
-    width: 350px;
+    width: 300px;
     height: auto;
     font-size: 20px;
+    font-weight: bold;
 }
+.small-bia a{
+    text-decoration: none;
+    color: black;
+}
+/* .small-bia img:hover{
+    transform: translate(5px,10px);
+} */
 .small-bia p:hover{
     color: brown;
     font-weight: bold;
 }
-.small-bia p:hover{
-    color: brown;
-    font-weight: bold;
-}
-h2{
+.SP-bia h2{
     color: brown;
 }
 .layout{
@@ -39,4 +43,11 @@ u{
 }
 .winemart{
     text-align: center;
+}
+.winemart h2{
+    color: brown;
+}
+.tien{
+    font-weight: bold;
+    color: brown;
 }

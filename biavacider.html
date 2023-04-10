@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bia Và Cider</title>
     <link rel="stylesheet" href="./css/biavacider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="shortcut icon" href="./img/logo.webp" type="image/x-icon" />
 </head>
 <body>
     <div class="gif-big">
@@ -24,52 +26,82 @@
     </div>
     <div class="SP-bia">
         <hr>
-        <h2>TẤT CẢ SẢN PHẨM BIA VÀ CIDER</h2>
+        <h2><i class='fas fa-glass-cheers'></i>TẤT CẢ SẢN PHẨM BIA VÀ CIDER</h2>
         <hr>
         <div class="big-bia">
             <div class="small-bia">
-                <img src="./img/bia1.webp" alt="" width="250px" height="250px">
-                <p>Set hộp quà bia sứ Sterkens 3 chai</p>
-                <p>Liên Hệ Ngay</p>
+                <a href="">
+                    <img src="./img/bia1.webp" alt="" width="250px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Set hộp quà bia sứ Sterkens 3 chai</p>
+                    <p class="tien">Liên Hệ Ngay</p>
+                </a>
             </div>
             <div class="small-bia">
-                <img src="./img/bia2.webp" alt="" width="250px" height="250px">
-                <p>Bia Úc Coopers Sparkling Ale 375ml</p>
-                <p>Liên Hệ Ngay</p>
+                <a href="">
+                    <img src="./img/bia2.webp" alt="" width="250px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Bia Úc Coopers Sparkling Ale</p>
+                    <p class="tien">Liên Hệ Ngay</p>
+                </a>
             </div>
             <div class="small-bia">
-                <img src="./img/bia3.webp" alt="" width="250px" height="250px">
-                <p>Nước Soda Fever Tree (200ml)</p>
-                <p>Liên Hệ Ngay</p>
+                <a href="">
+                    <img src="./img/bia3.webp" alt="" width="250px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Nước Soda Fever Tree (200ml)</p>
+                    <p class="tien">Liên Hệ Ngay</p>
+                </a>
             </div>
             <div class="small-bia">
-                <img src="./img/bia4.webp" alt="" width="250px" height="250px">
-                <p>BIA ROOSTER BLONDE</p>
-                <p>Liên Hệ Ngay</p>
+                <a href="">
+                    <img src="./img/bia4.webp" alt="" width="250px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>BIA ROOSTER BLONDE</p>
+                    <p class="tien">Liên Hệ Ngay</p>
+                </a>
             </div>
         </div>
         <div class="big-bia">
             <div class="small-bia">
-                <img src="./img/bia5.webp" alt="" width="250px" height="250px">
-                <p>Bia Rooster Dark</p>
-                <p>Liên Hệ Ngay</p>
+                <a href="">
+                    <img src="./img/bia5.webp" alt="" width="250px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Bia Rooster Dark</p>
+                    <p class="tien">Liên Hệ Ngay</p>
+                </a>
             </div>
             <div class="small-bia">
-                <img src="./img/bia6.webp" alt="" width="250px" height="250px">
-                <p>Bia Rooster Pale</p>
-                <p>Liên Hệ Ngay</p>
+                <a href="">
+                    <img src="./img/bia6.webp" alt="" width="250px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Bia Rooster Pale</p>
+                    <p class="tien">Liên Hệ Ngay</p>
+                </a>
             </div>
             <div class="small-bia">
-                <img src="./img/bia7.webp" alt="" width="250px" height="250px">
-                <p>Bia Rooster Ipa</p>
-                <p>Liên Hệ Ngay</p>
+                <a href="">
+                    <img src="./img/bia7.webp" alt="" width="250px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Bia Rooster Ipa</p>
+                    <p class="tien">Liên Hệ Ngay</p>
+                </a>
             </div>
             <div class="small-bia">
-                <img src="./img/bia8.webp" alt="" width="250px" height="250px">
-                <p>Leffe Brune Beer (330ml)</p>
-                <p>Liên Hệ Ngay</p>
+                <a href="">
+                    <img src="./img/bia8.webp" alt="" width="250px" height="250px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <p>Leffe Brune Beer (330ml)</p>
+                    <p class="tien">Liên Hệ Ngay</p>
+                </a>
             </div>
         </div>
     </div>
+    <script>
+        function bigImg(x) {
+    // x.style.height = "300px";
+    // x.style.width = "300px";
+    x.style = `transform: scale(0.9)`
+  }
+  
+  function normalImg(x) {
+    // x.style.height = "280px";
+    // x.style.width = "280px";
+    x.style = `transform: scale(1)`
+  
+  }
+    </script>
 </body>
 </html>

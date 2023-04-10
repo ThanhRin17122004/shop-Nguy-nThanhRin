@@ -4,48 +4,119 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Nguyễn Thanh Rin</title>
+        <title>WineMart</title>
+        <link rel="shortcut icon" href="./img/logo.webp" type="image/x-icon" />
         <link rel="stylesheet" href="./css/index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        />
     </head>
     <body>
         <script>
             function resizeIframe(height) {
                 var iframe = document.querySelector(".main-iframe");
                 iframe.style = `height: ${height}px`;
+                window.scrollTo(0, 0);
             }
+            // loading web
+            window.addEventListener("message", function (e) {
+                if (e.data === "scroll-to-top") {
+                    window.scrollTo(0, 0);
+                }
+            });
         </script>
+        <div class="mapbut">
+            <div class="hotline">
+                <a href="tel://1900636035"
+                    ><i class="fa-solid fa-phone"></i>Hotline: 1900 636035</a
+                >
+            </div>
+            <div class="email">
+                <a href="mailto:marketing@winemart.vn"
+                    ><i class="fa-solid fa-envelope"></i>Email:
+                    marketing@winemart.vn</a
+                >
+            </div>
+            <!-- <div class="tentracuu">
+                <a href=""></a>
+            </div> -->
+        </div>
+        <hr />
         <div class="light">
             <div class="logo">
-               <a href="./index.html"><img src="./img/logo.webp"alt=""width="100px"height="100px"/></a>
+                <a href="./index.html"
+                    ><img
+                        src="./img/logo.webp"
+                        alt=""
+                        width="100px"
+                        height="100px"
+                /></a>
             </div>
-            <div class="form-group">
-                <p class="sign-in btn-sign-in" onclick="modalSignIn()">
-                    Đăng Nhập
-                </p>
-                <p class="sign-up btn-sign-up">Đăng Ký</p>
+            <div class="search-big">
+                <div class="search">
+                    <form action="" id="search-box">
+                        <input
+                            type="text"
+                            id="search-text"
+                            placeholder="Search"
+                        />
+                        <button id="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="bag-wrapper">
+                    <div class="bag">
+                        <a href=""
+                            ><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
+
         <nav class="table">
             <ul>
-                <li>
-                    <a href="./gioithieu.html" target="page" onclick="resizeIframe('1050')">GIỚI THIỆU</a>
+                <li class="hover">
+                    <a
+                        href="./gioithieu.html"
+                        target="page"
+                        onclick="resizeIframe('1050')"
+                        ><i class="fa-solid fa-champagne-glasses"></i>GIỚI
+                        THIỆU</a
+                    >
                 </li>
-                <li>
-                    <a href="./ruouvang.html" target="page" onclick="resizeIframe('1500')">RƯỢU VANG</a>
+                <li class="hover">
+                    <a
+                        href="./ruouvang.html"
+                        target="page"
+                        onclick="resizeIframe('1500')"
+                        ><i class="fa-solid fa-wine-bottle"></i> RƯỢU VANG</a
+                    >
                     <!-- <ul>
                         <li><a href="">Rượu Vang Đỏ</a></li>
                         <li><a href="">Rượu Vang Trắng</a></li>
                     </ul> -->
                 </li>
-                <li>
-                    <a href="./ruoumanh.html" target="page" onclick="resizeIframe('1450')">RƯỢU MẠNH</a>
+                <li class="hover">
+                    <a
+                        href="./ruoumanh.html"
+                        target="page"
+                        onclick="resizeIframe('1450')"
+                        ><i class="fa-solid fa-wine-bottle"></i> RƯỢU MẠNH</a
+                    >
                     <!-- <ul>
                         <li><a href="">Rượu Gim</a></li>
                         <li><a href="">Rượu Rum</a></li>
                     </ul> -->
                 </li>
-                <li>
-                    <a href="./biavacider.html" target="page" onclick="resizeIframe('1450')">BIA VÀ CIDER</a>
+                <li class="hover">
+                    <a
+                        href="./biavacider.html"
+                        target="page"
+                        onclick="resizeIframe('1450')"
+                        ><i class="fa-solid fa-wine-bottle"></i> BIA VÀ CIDER</a
+                    >
                     <!-- <ul>
                         <li><a href="">Các Loại Cider</a></li>
                         <li><a href="">Bia Nhập Khẩu</a></li>
@@ -53,49 +124,46 @@
                     </ul> -->
                 </li>
 
-                <li>
-                    <a href="./phukien.html" target="page" onclick="resizeIframe('900')">PHỤ KIỆN RƯỢU</a>
+                <li class="hover">
+                    <a
+                        href="./phukien.html"
+                        target="page"
+                        onclick="resizeIframe('900')"
+                        ><i class="fa-solid fa-martini-glass"></i>PHỤ KIỆN
+                        RƯỢU</a
+                    >
                     <!-- <ul>
                         <li><a href="">Ly Uống Rượu</a></li>
                         <li><a href="">Đồ khui Bia</a></li>
                     </ul> -->
                 </li>
+                <li class="hover">
+                    <a
+                        href="./lienhe.html"
+                        target="page"
+                        onclick="resizeIframe('1400')"
+                        ><i class="fa-solid fa-address-book"></i> LIÊN HỆ</a
+                    >
+                </li>
                 <li>
-                    <a href="./lienhe.html" target="page" onclick="resizeIframe('1400')">LIÊN HỆ</a>
+                    <div class="form-group">
+                        <p class="sign-in btn-sign-in" onclick="modalSignIn()" > Đăng Nhập</p>
+                        <p class="sign-up btn-sign-up">Đăng Ký</p>
+                    </div>
                 </li>
             </ul>
         </nav>
-        <div class="slider">
-            <i class="fa fa-angle-left slider-prev" style="display: flex"></i>
-            <ul class="slider-dots">
-                <li class="slider-dot-item active" data-index="0"></li>
-                <li class="slider-dot-item" data-index="1"></li>
-                <li class="slider-dot-item" data-index="2"></li>
-                <li class="slider-dot-item" data-index="3"></li>
-                <li class="slider-dot-item" data-index="4"></li>
-            </ul>
-            <div class="slider-wrapper">
-                <div class="slider-main">
-                    <div class="slider-item">
-                        <img src="./img/slider33.jpg" alt="" class="image" />
-                    </div>
-                    <div class="slider-item">
-                        <img src="./img/slider2.jpg" alt="" class="image" />
-                    </div>
-                    <div class="slider-item">
-                        <img src="./img/slider11.jpg" alt="" class="image" />
-                    </div>
-                    <div class="slider-item">
-                        <img src="./img/slider44.jpg" alt="" class="image" />
-                    </div>
-                    <div class="slider-item">
-                        <img src="./img/slider55.jpg" alt="" class="image" />
-                    </div>
-                </div>
+        <!-- <div class="big">
+            <div class="form-group">
+                <p class="sign-in btn-sign-in" onclick="modalSignIn()">
+                    Đăng Nhập
+                </p>
             </div>
-            <i class="fa fa-angle-right slider-next" style="display: flex"></i>
-            <script src="./js/slider.js"></script>
-        </div>
+            <div class="form-group">
+                <p class="sign-up btn-sign-up">Đăng Ký</p>
+            </div>
+        </div> -->
+        <!-- thay đổi nội dung web theo iframe -->
         <div class="thay-doi">
             <article>
                 <iframe
@@ -139,7 +207,13 @@
                     nữ đang mang thai.
                 </p>
                 <p>©Copyright WineMart 2022</p>
-                <p>Thiết Kế Bởi: <a href="https://www.facebook.com/profile.php?id=100022743444240">Nguyễn Thanh Rin</a></p>
+                <p>
+                    Thiết Kế Bởi:
+                    <a
+                        href="https://www.facebook.com/profile.php?id=100022743444240"
+                        >Nguyễn Thanh Rin</a
+                    >
+                </p>
             </div>
         </footer>
         <div class="modal-sign-in">
@@ -182,6 +256,17 @@
             };
             btnSignUp.addEventListener("click", function () {
                 modalSignUp.classList.add("active");
+            });
+            const bagWrapper = document.querySelector(".bag-wrapper");
+            let count = 0;
+            window.addEventListener("message", function (e) {
+                if (e.data === "scroll-to-top") {
+                    window.scrollTo(0, 0);
+                }
+                if (e.data === "tang-sp") {
+                    count++;
+                    bagWrapper.style = `--ct--value--: "${count}"`;
+                }
             });
         </script>
     </body>

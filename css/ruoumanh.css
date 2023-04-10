@@ -10,12 +10,19 @@
     margin: 10px;
     box-shadow: 7px 7px brown;
 }
+.small-ruoumanh a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/* .small-ruoumanh img:hover{
+    transform: translate(5px,10px);
+} */
 .small-ruoumanh p{
     margin-bottom: 10px;
-    font-size: 15px;
-    width: 350px;
+    width: 300px;
     height: auto;
-    font-size: 20px;
+    font-size: 17px;
 }
 .small-ruoumanh p:hover{
     color: brown;
@@ -39,4 +46,8 @@ u{
 }
 .winemart{
     text-align: center;
+}
+.tien{
+    color: brown;
+    font-weight: bold;
 }

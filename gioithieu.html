@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giới Thiệu</title>
     <link rel="stylesheet" href="./css/gioithieu.css">
+    <link rel="shortcut icon" href="./img/logo.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
 </head>
 <body>
     <div class="name">
@@ -17,5 +19,48 @@
         <p>Sứ mệnh của Winemart là phân phối các loại rượu cao cấp và thực phẩm chất lượng có xuất xứ rõ ràng.</p>
         <iframe width="1200" height="700" src="https://www.youtube.com/embed/E6ahACwOsGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
+    <div id="video">
+        <h1>Video giới thiệu về winemart</h1>
+        <div id="player-container">
+            <video id="myplayer" width="640" height="360">
+                <source src="./img/nhac.mp4" type="video/mp4">
+            </video>
+            <div id="controls">
+                <button onclick="playPause()">Play <i class='far fa-play-circle'></i></button>
+                <button onclick="stopVideo()">Stop <i class='far fa-stop-circle'></i></button>
+                <button onclick="replayVideo()">Replay <i class='fas fa-sync-alt'></i></button>
+                <button onclick="increaseVolume()">Volume <i class='fas fa-volume-down'></i></button>
+                <button onclick="decreaseVolume()">Volume <i class='fas fa-volume-off'></i></button>
+                <button onclick="muteVolume()">Mute/Unmute <i class='fas fa-volume-mute'></i></button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var player = document.getElementById("myplayer");
+        function playPause() {
+            if (player.paused) { player.play(); }
+            else { player.pause(); }
+        }
+        function stopVideo() {
+            player.pause();
+            if (player.currentTime) { player.currentTime = 0; }
+        }
+        function replayVideo() {
+            player.currentTime = 0;
+            player.play();
+        }
+        function increaseVolume() {
+            if (player.volume < 1)
+                player.volume = parseFloat(player.volume + 0.1).toFixed(1);
+        }
+        function decreaseVolume() {
+            if (player.volume > 0)
+                player.volume = parseFloat(player.volume - 0.1).toFixed(1);
+        }
+        function muteVolume() {
+            if (player.muted) { player.muted = false; }
+            else { player.muted = true; }
+        }
+    </script>
 </body>
 </html>
