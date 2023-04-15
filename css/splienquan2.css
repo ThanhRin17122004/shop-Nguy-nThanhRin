@@ -295,7 +295,7 @@
 .small-ruoumanh{
     border: 1px solid brown;
     margin: 10px;
-    box-shadow: 7px 7px brown;
+    /* box-shadow: 7px 7px brown; */
     text-align: center;
 }
 .small-ruoumanh a{

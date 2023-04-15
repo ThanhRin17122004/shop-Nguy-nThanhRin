@@ -8,7 +8,7 @@
 .small-phukien{
     border: 1px solid brown;
     margin: 10px;
-    box-shadow: 5px 5px brown;
+    /* box-shadow: 5px 5px brown; */
 }
 .small-phukien p{
     margin-bottom: 10px;

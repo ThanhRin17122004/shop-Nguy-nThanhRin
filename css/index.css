@@ -333,7 +333,7 @@
     list-style: none;
     z-index: 10;
 }
-.slider-dots li {
+/* .slider-dots li {
     margin: 0 10px;
     width: 32px;
     height: 10px;
@@ -341,13 +341,13 @@
     background-color: #dce0e3;
     cursor: pointer;
     transition: background-color 0.25s linear;
-}
-.slider-dots li.active {
+} */
+/* .slider-dots li.active {
     background-color: #9aa6af;
     width: 50px;
-}
+} */
 .slider-wrapper {
-    width: 100%;
+    width: 800px;
     height: 400px;
     overflow: hidden;
     position: relative;

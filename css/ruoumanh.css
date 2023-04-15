@@ -8,7 +8,7 @@
 .small-ruoumanh{
     border: 1px solid brown;
     margin: 10px;
-    box-shadow: 7px 7px brown;
+    /* box-shadow: 7px 7px brown; */
 }
 .small-ruoumanh a{
     text-decoration: none;
